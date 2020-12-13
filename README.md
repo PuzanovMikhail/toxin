@@ -4,7 +4,7 @@ My templete
 
 Build Setup:
 # Download repository:
-git clone https://github.com/PuzanovMikhail/webpack_template.git webpack-template
+git clone https://github.com/PuzanovMikhail/toxin.git webpack-template
 
 # Go to the app:
 cd webpack-template
