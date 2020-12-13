@@ -23,6 +23,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: $mainFontColor;
   font-family: $mainFont;
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
@@ -38,11 +39,23 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
+  font-family: $mainFont;
+  color: $hFontColor;
+  font-weight: $h1LineHeight;
   margin: 0;
+}
+h1 {
+  font-size: $h1FontSize;
+  line-height: $h1LineHeight;
+}
+h2 {
+  font-size: $h2FontSize;
+  line-height: $h2LineHeight;
+}
+h3 {
+  font-size: $h3FontSize;
+  line-height: $h3LineHeight;
 }
 
 a {
