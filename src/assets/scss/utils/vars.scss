@@ -1,5 +1,43 @@
 /* Vars:
    ========================================================================== */
+   /*
+    All colors taken from:
+    https://github.com/vedees/uimini
+   */
+
+   // Main color
+   $dark-shade                        : #1F2041;
+   $dark-shade-75                     : rgba($dark-shade, 0.75);
+   $dark-shade-50                     : rgba($dark-shade, 0.50);
+   $dark-shade-25                     : rgba($dark-shade, 0.25);
+   $dark-shade-5                      : rgba($dark-shade, 0.05);
+   $purple-color                      : #BC9CFF;
+   $purple-color-second               : #8BA4F9;
+   $green-color                       : #6FCF97;
+   $primary-color                     : #444CE0;
+   $success-color                     : #26DE81;
+   $danger-color                      : #FC5C65;
+   $warning-color                     : #FED330;
+   $light-color                       : #999999;
+   $auxiliary-color                   : #FFFFFF;
+   $primary-gradient-color            : linear-gradient(180deg, $purple-color 0%, $purple-color-second 100%);
+   $auxiliary-gradient-color          : linear-gradient($auxiliary-color, $auxiliary-color);
+   $primary-gradient-disable-color    : linear-gradient(180deg, rgba($purple-color, 0.5), rgba($purple-color-second, 0.5) 100%);
+
+
+   // Neutral Color
+   $neutral-primary         : #303133;
+   $neutral-regular         : #606266;
+   $neutral-secondary       : #909399;
+   $neutral-placeholder     : #C0C4CC;
+
+   // Border Color
+   $border-base             : #DCDFE6;
+   $border-light            : #E4E7ED;
+   $border-lighter          : #EBEEF5;
+   $border-lightex          : #F2F6FC;
+
+
 
 // Font
 $mainFont                : "montserrat_bold";
@@ -13,12 +51,15 @@ $mainLineHeight          : 24px;
 $hFontColor              : $dark-shade;
 $hFontWeight             : 700;
 
+$h3FontColor             : $dark-shade;
 $h3FontSize              : 12px;
 $h3LineHeight            : 14,63px;
 
+$h2FontColor             : $dark-shade;
 $h2FontSize              : 19px;
 $h2LineHeight            : 23,16px;
 
+$h1FontColor             : $dark-shade;
 $h1FontSize              : 29,26px;
 $h1LineHeight            : 24px;
 
@@ -28,35 +69,3 @@ $tableWidth              : 768px;
 $smTableWidth            : 640px;
 $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
-
-/*
- All colors taken from:
- https://github.com/vedees/uimini
-*/
-
-// Main color
-$dark-shade              : #1F2041;
-$dark-shade-75           : rgba($dark-shade, 0.75);
-$dark-shade-50           : rgba($dark-shade, 0.50);
-$dark-shade-25           : rgba($dark-shade, 0.25);
-$dark-shade-5            : rgba($dark-shade, 0.05);
-$purple-color            : #BC9CFF;
-$green-color             : #6FCF97;
-$primary-color           : #444ce0;
-$success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
-
-
-// Neutral Color
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
-// Border Color
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;

@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/reset";
+@import "../../components/button/button.scss";
 
 html {
   line-height: $mainLineHeight;
@@ -56,6 +57,13 @@ h2 {
 h3 {
   font-size: $h3FontSize;
   line-height: $h3LineHeight;
+}
+p {
+  color: $mainFontColor;
+  font-family: $mainFont;
+  font-weight: $mainFontWeight;
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
 }
 
 a {
@@ -113,6 +121,32 @@ section,
   @media screen and (max-width: $phoneWidth) {
     max-width: $smPhoneWidth;
   }
+}
+
+.material-icons {
+  color: $mainFontColor;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 // Modules:

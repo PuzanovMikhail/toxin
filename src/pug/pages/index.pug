@@ -1,4 +1,4 @@
-extends ../layout/main
+include ../layout/main
 
 block variables
   - var title = 'Webpack+pug';
@@ -10,10 +10,11 @@ block content
     .container
       +item('item title', 'item descr')
       +item('item title', 'item description')
-      +item('item title', 'item description')
+      +item('item title', 'item description')  
+  .h1
+    .material-icons face
   example-component
-    
-    
+
 block script
   script(type='text/javascript').
     const foo = true;
