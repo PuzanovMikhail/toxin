@@ -1,0 +1,28 @@
+mixin button({mods = '', title} = {})
+  - 
+    let modList = mods.split(',')
+    let allMods = ''
+  
+    for (let i=0; i < modList.length; i++) {
+      allMods = allMods + ' button--' + modList[i].trim()
+    }
+    
+  button.button(class= allMods, type="button")= title
+  
+              //- mods list
+                'border'
+                'disable'
+                'arrow'
+                'content-size'
+
+
+.button-section
+  +button({title: 'Click me'})
+.button-section
+  +button({title: 'Click me', mods: 'border'})
+.button-section
+  +button({title: 'Click me', mods: 'border,disable'})
+.button-section.button-section--content-size
+  +button({title: 'Click me', mods: 'arrow'})
+  +button({title: 'Click me', mods: 'content-size'})  
+  +button({title: 'Click me bigger', mods: 'border,content-size'})  

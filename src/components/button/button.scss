@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+%material-icons {
+  display: inline-block;
+  direction: ltr;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  letter-spacing: normal;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-family: 'Material Icons';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'liga';
+}
+
+
+$button-heght: 44px;
+$font-size: 14px;
+$gap: 10px;
+$radius: 80px;
+
+* {
+  letter-spacing: 3px;
+  color:  $auxiliary-color;
+  font-family: Quicksand;
+}
+
+.button-section {
+  width: 150px;
+  padding: 10px;
+
+  &--content-size {
+    width: auto;
+  }
+}
+
+.button {
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    border: none;
+    border-radius: $radius;
+    background: $primary-gradient-color;
+    cursor: pointer;
+    width: 100%;
+    height: $button-heght;
+    text-align: center;
+    font-size: $font-size;
+    font-weight: bold;
+    user-select: none;
+
+    &--border {
+      border: solid 0.125rem transparent;
+      border-radius: $radius;
+      box-shadow: 2px 1000px 1px $auxiliary-color inset;
+      background: $auxiliary-gradient-color, $primary-gradient-color;
+      background-clip: content-box, border-box;
+      background-origin: border-box;
+      color: $purple-color;
+    }
+
+    &--arrow {
+      position: relative;
+      width: 320px;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        content: 'arrow_forward';
+        @extend %material-icons;
+      }
+    }
+
+    &--content-size {
+      padding-right: 20px;
+      padding-left: 20px;
+      width: auto;
+    }
+
+    &--disable {
+      background: $auxiliary-gradient-color, $primary-gradient-disable-color;
+      background-clip: content-box, border-box;
+      background-origin: border-box;
+    }
+  }
+.button:hover {
+  opacity: 0.5;
+}
