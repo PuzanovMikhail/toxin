@@ -47,14 +47,27 @@ $radius: 80px;
     outline: none;
     border: none;
     border-radius: $radius;
-    background: $primary-gradient-color;
+    background: $auxiliary-gradient-color; /*$primary-gradient-color;*/
     cursor: pointer;
     width: 100%;
     height: $button-heght;
     text-align: center;
-    font-size: $font-size;
-    font-weight: bold;
+    font-size: $mainFontSize;
+    font-weight: $hFontWeight;
     user-select: none;
+
+
+    &--non_border_non_background {
+      background: $auxiliary-gradient-color;
+      color: $purple-color;
+      &:hover {
+        color: $dark-shade-50;
+      }
+    }
+
+    &--background {
+      background: $primary-gradient-color;
+    }
 
     &--border {
       border: solid 0.125rem transparent;

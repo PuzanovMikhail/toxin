@@ -17,12 +17,12 @@ mixin button({mods = '', title} = {})
 
 
 .button-section
-  +button({title: 'Click me'})
+  +button({title: 'Click me', mods: 'background'})
 .button-section
   +button({title: 'Click me', mods: 'border'})
 .button-section
   +button({title: 'Click me', mods: 'border,disable'})
 .button-section.button-section--content-size
-  +button({title: 'Click me', mods: 'arrow'})
-  +button({title: 'Click me', mods: 'content-size'})  
+  +button({title: 'Click me', mods: 'background,arrow'})
+  +button({title: 'Click me', mods: 'background,content-size'})  
   +button({title: 'Click me bigger', mods: 'border,content-size'})  
