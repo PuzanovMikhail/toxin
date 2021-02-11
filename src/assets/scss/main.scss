@@ -123,8 +123,8 @@ section,
   }
 }
 
+%material-icons,
 .material-icons {
-  color: $mainFontColor;
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -148,6 +148,17 @@ section,
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-
+.material-icons.dark-shade-75 {
+  color: $dark-shade-75;
+}
+.material-icons.dark-shade-50 {
+  color: $dark-shade-50;
+}
+.material-icons.dark-shade-25 {
+  color: $dark-shade-25;
+}
+.material-icons.primary-gradient-color {
+  color: $primary-gradient-color;
+}
 // Modules:
 // example: @import "modules/my-module.scss";
